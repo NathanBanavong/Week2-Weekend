@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <!--display-->
+    <color name="colorDisplay">#131683</color>
+
+    <!--clear button-->
+    <color name="colorClear">#e70808</color>
+
+    <!--buttons-->
+    <color name="colorButtonPrimary">#1aaf1e</color>
+    <color name="colorOperationsPrimary">#000000</color>
+</resources>

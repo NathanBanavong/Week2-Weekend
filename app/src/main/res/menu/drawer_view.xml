@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--<item-->
+        <!--android:id="@+id/action_back"-->
+        <!--android:icon="@drawable/ic_back"-->
+        <!--android:title=""-->
+        <!--app:showAsAction="ifRoom"/>-->
+
+    <group android:checkableBehavior="single">
+        <!--example of items in nav bar-->
+        <!--<item-->
+            <!--android:id="@+id/nav_camera"-->
+            <!--android:icon="@drawable/ic_menu_camera"-->
+            <!--android:title="@string/import" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_gallery"-->
+            <!--android:icon="@drawable/ic_menu_gallery"-->
+            <!--android:title="@string/gallery" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_slideshow"-->
+            <!--android:icon="@drawable/ic_menu_slideshow"-->
+            <!--android:title="@string/slideshow" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_manage"-->
+            <!--android:icon="@drawable/ic_menu_manage"-->
+            <!--android:title="@string/tools" />-->
+
+        <!--TODO need to add submenu to add or display customer-->
+        <item
+            android:id="@+id/action_back"
+            android:icon="@drawable/ic_back"
+            android:title="Back"
+            android:orderInCategory="100"
+            app:showAsAction="ifRoom"/>
+
+        <item android:id="@+id/action_search"
+            android:title="search"
+            android:icon="@drawable/ic_search"
+            app:showAsAction="ifRoom|collapseActionView"
+            android:orderInCategory="100"
+            app:actionViewClass="android.support.v7.widget.SearchView" />
+
+        <item
+            android:id="@+id/nav_AddCustomer"
+            android:title="Add Customer"
+            app:showAsAction="always"/>
+
+        <item
+            android:id="@+id/nav_Calculator"
+            android:icon="@drawable/ic_calculator"
+            android:title="Calculator"
+            app:showAsAction="always"/>
+
+        <item android:id="@+id/changeColors"
+            android:title="colors"
+            app:showAsAction="never" />
+
+
+
+    </group>
+
+</menu>
