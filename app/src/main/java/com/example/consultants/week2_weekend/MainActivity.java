@@ -48,16 +48,13 @@ public class MainActivity extends AppCompatActivity {
                         switch (menuItem.getItemId()) {
                             case android.R.id.home: //user clicks home id -> calls start
                                 mDrawerLayout.openDrawer(GravityCompat.START);
-                                return true;
                             //inside the overflow_view
                             case R.id.nav_Calculator:
                                 Intent calcIntent = new Intent(getApplicationContext(), Calculator.class);
                                 startActivity(calcIntent);
-                                return true;
                             case R.id.nav_AddCustomer:
                                 Intent custIntent = new Intent(getApplicationContext(), CustomerRecyclerViewActivity.class);
                                 startActivity(custIntent);
-                                return true;
                         }
 
 
@@ -71,29 +68,29 @@ public class MainActivity extends AppCompatActivity {
 
         //set the drawer response when nav opens
         //listen to the open and close events for state changes
-        mDrawerLayout.addDrawerListener(
-                new DrawerLayout.DrawerListener() {
-                    @Override
-                    public void onDrawerSlide(View drawerView, float slideOffset) {
-                        // Respond when the drawer's position changes
-                    }
-
-                    @Override
-                    public void onDrawerOpened(View drawerView) {
-                        // Respond when the drawer is opened
-                    }
-
-                    @Override
-                    public void onDrawerClosed(View drawerView) {
-                        // Respond when the drawer is closed
-                    }
-
-                    @Override
-                    public void onDrawerStateChanged(int newState) {
-                        // Respond when the drawer motion state changes
-                    }
-                }
-        );
+//        mDrawerLayout.addDrawerListener(
+//                new DrawerLayout.DrawerListener() {
+//                    @Override
+//                    public void onDrawerSlide(View drawerView, float slideOffset) {
+//                        // Respond when the drawer's position changes
+//                    }
+//
+//                    @Override
+//                    public void onDrawerOpened(View drawerView) {
+//                        // Respond when the drawer is opened
+//                    }
+//
+//                    @Override
+//                    public void onDrawerClosed(View drawerView) {
+//                        // Respond when the drawer is closed
+//                    }
+//
+//                    @Override
+//                    public void onDrawerStateChanged(int newState) {
+//                        // Respond when the drawer motion state changes
+//                    }
+//                }
+//        );
 
 
     }
@@ -162,10 +159,10 @@ public class MainActivity extends AppCompatActivity {
                 mDrawerLayout.openDrawer(GravityCompat.START);
                 return true;
             //inside the overflow_view
-            case R.id.changeColors:
+            case R.id.action_back:
 
                 return true;
-            case R.id.btn_AddCustomer:
+            case R.id.nav_AddCustomer:
                 mDrawerLayout.closeDrawers();
 
                 return true;

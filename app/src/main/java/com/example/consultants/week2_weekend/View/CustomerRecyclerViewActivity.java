@@ -1,5 +1,6 @@
 package com.example.consultants.week2_weekend.View;
 
+import android.support.design.widget.NavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;

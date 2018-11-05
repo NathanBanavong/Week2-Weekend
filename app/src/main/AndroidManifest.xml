@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".View.CustomerRecyclerViewActivity" />
-        <activity android:name=".Calculator"></activity>
+        <activity android:name=".Calculator" />
+        <activity android:name=".MenuActivity"></activity>
     </application>
 
 </manifest>
